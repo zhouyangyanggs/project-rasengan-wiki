@@ -1,13 +1,21 @@
 {
-  "name": "VV: ULTIMATUM Wiki",
-  "short_name": "VV Ultimatum",
-  "description": "Fan-made VV: ULTIMATUM Roblox wiki with codes, bosses, builds, races and guides.",
+  "name": "Project Rasengan Wiki",
+  "short_name": "Project Rasengan",
+  "description": "Fan-made Project Rasengan wiki with guides, roadmap, bosses and game news.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0d0d0d",
-  "theme_color": "#9f4623",
+  "theme_color": "#0f172a",
   "icons": [
-    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "/android-chrome-2026-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-2026-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }

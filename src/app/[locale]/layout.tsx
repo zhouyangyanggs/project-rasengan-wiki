@@ -24,7 +24,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: messages.metadata.description,
     keywords: messages.metadata.keywords,
     verification: { google: "OYuBAYBQmAIObKvw7weTnn3_yJxbz9WJiJo0fAGJZRM" },
-    icons: { icon: "/favicon.ico" },
+    icons: {
+      shortcut: "/favicon-2026.ico",
+      icon: [
+        { url: "/favicon-2026.ico", sizes: "48x48", type: "image/x-icon" },
+        { url: "/favicon-2026-32x32.png", sizes: "32x32", type: "image/png" },
+        { url: "/favicon-2026-512x512.png", sizes: "512x512", type: "image/png" },
+      ],
+      apple: "/apple-touch-icon-2026.png",
+    },
     openGraph: { type: "website", locale, url: siteUrl, siteName: "Project Rasengan Wiki", images: [{ url: image }] },
     twitter: { card: "summary_large_image", images: [{ url: image }] },
   };
