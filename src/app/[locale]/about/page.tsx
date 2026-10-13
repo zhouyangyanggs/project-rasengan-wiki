@@ -1,10 +1,12 @@
-import { LegalPage } from "@/components/legal-page";
+import { getMessages } from "next-intl/server";
 
-export default function AboutPage() {
+export default async function Page() {
+  const messages = await getMessages();
+  const legal = messages.legal.about;
   return (
-    <LegalPage title="About">
-      <p>VV Ultimatum Wiki is an independent fan-built guide hub covering progression routes, races, bosses, builds, and essential game knowledge for new and veteran players alike.</p>
-      <p>The layout, navigation, article cards, and detail format are reproduced from the target VV: ULTIMATUM wiki pages requested for this implementation.</p>
-    </LegalPage>
+    <main className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+      <h1 className="text-4xl font-extrabold tracking-tight text-foreground">{legal.title}</h1>
+      <div className="mt-8 space-y-4 text-lg leading-8 text-muted-foreground">{legal.paragraphs.map((p: string) => <p key={p}>{p}</p>)}</div>
+    </main>
   );
 }

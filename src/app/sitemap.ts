@@ -1,25 +1,42 @@
 import type { MetadataRoute } from "next";
-import { getAllContentPaths } from "@/lib/content";
+import { getAllContentPaths, CONTENT_TYPES } from "@/lib/content";
 import { routing } from "@/i18n/routing";
 
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://projectrasengan.lol").replace(/\/$/, "");
+
+function alternatesFor(pathname: string) {
+  return {
+    languages: Object.fromEntries(
+      routing.locales.map((l) => [l, `${siteUrl}/${l}${pathname}`])
+    ),
+  };
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://vvultimatum.sbs";
-
-  // Static paths that always exist
-  const staticPaths = ["/", "/bosses", "/privacy-policy", "/terms-of-service", "/copyright", "/about"];
-
-  // Dynamic paths: scan actual MDX content files
-  const contentPaths = await getAllContentPaths("en");
-  const dynamicPaths = contentPaths.map((item) => `/${[item.contentType, ...item.slug].join("/")}`);
-
-  const paths = [...staticPaths, ...dynamicPaths];
-
-  return routing.locales.flatMap((locale) =>
-    paths.map((path) => ({
-      url: `${siteUrl}${locale === "en" ? "" : `/${locale}`}${path === "/" ? "" : path}`,
-      lastModified: new Date(),
-      changeFrequency: path === "/" ? ("daily" as const) : ("weekly" as const),
-      priority: path === "/" ? 1 : path === "/bosses" ? 0.8 : 0.6,
-    })),
+  const localePaths = routing.locales.flatMap((locale) =>
+    ["", ...CONTENT_TYPES].map((p) => ({
+      url: `${siteUrl}/${locale}${p ? `/${p}` : ""}`,
+      changeFrequency: "weekly" as const,
+      priority: p ? 0.7 : 1,
+      alternates: alternatesFor(p ? `/${p}` : ""),
+    }))
   );
+
+  const contentPaths = (
+    await Promise.all(
+      routing.locales.map(async (locale) =>
+        (await getAllContentPaths(locale)).map(({ contentType, slug }) => {
+          const pathname = `/${contentType}/${slug.join("/")}`;
+          return {
+            url: `${siteUrl}/${locale}${pathname}`,
+            changeFrequency: "weekly" as const,
+            priority: 0.8,
+            alternates: alternatesFor(pathname),
+          };
+        })
+      )
+    )
+  ).flat();
+
+  return [...localePaths, ...contentPaths];
 }

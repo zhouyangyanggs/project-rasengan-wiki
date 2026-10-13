@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Rasengan Wiki
+
+A fan-made community wiki for Project Rasengan, the official NARUTO franchise revival initiative covering anime, manga, card game, and mobile game projects.
+
+## Tech Stack
+
+- Next.js (App Router)
+- next-intl (i18n: en / ja / es / fr)
+- Tailwind CSS
+- MDX content pages
 
 ## Getting Started
 
-First, run the development server:
+``powershell
+# Install dependencies
+npm install
 
-```bash
+# Run dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Build for production
+npm run build
+``
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+`
+site/
+├── content/           # MDX wiki pages (45 pages × 4 locales)
+│   ├── en/
+│   ├── ja/
+│   ├── es/
+│   └── fr/
+├── public/
+│   ├── images/rasengan/   # Official visual assets
+│   └── videos/            # Local video files
+├── src/
+│   ├── app/[locale]/      # Pages and layouts
+│   ├── components/        # Shared UI components
+│   ├── config/            # Navigation config
+│   ├── i18n/              # i18n routing
+│   └── locales/           # UI translation JSON files
+└── package.json
+`
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The site is configured for Vercel deployment with NEXT_PUBLIC_SITE_URL=https://project-rasengan-wiki.vercel.app.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For GitHub Pages or other static hosting, update src/app/sitemap.ts and src/app/robots.ts with your actual domain.
 
-## Deploy on Vercel
+## Content Guidelines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- All content uses only confirmed official information
+- Unannounced dates/details are marked as TBA
+- No fabricated codes, stats, or links

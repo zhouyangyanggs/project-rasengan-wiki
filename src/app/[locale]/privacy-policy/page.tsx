@@ -1,11 +1,12 @@
-import { LegalPage } from "@/components/legal-page";
+import { getMessages } from "next-intl/server";
 
-export default function PrivacyPolicyPage() {
+export default async function Page() {
+  const messages = await getMessages();
+  const legal = messages.legal.privacy;
   return (
-    <LegalPage title="Privacy Policy">
-      <p>This fan wiki provides informational game guides for VV: ULTIMATUM. We do not request account credentials, Roblox passwords, or private payment information.</p>
-      <p>Basic analytics, advertising, and hosting providers may process standard technical information such as device type, browser, approximate region, and visited pages.</p>
-      <p>External links may lead to Roblox, Discord, YouTube, or community tools. Those services are governed by their own privacy policies.</p>
-    </LegalPage>
+    <main className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+      <h1 className="text-4xl font-extrabold tracking-tight text-foreground">{legal.title}</h1>
+      <div className="mt-8 space-y-4 text-lg leading-8 text-muted-foreground">{legal.paragraphs.map((p: string) => <p key={p}>{p}</p>)}</div>
+    </main>
   );
 }

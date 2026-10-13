@@ -237,39 +237,71 @@ export interface NavGroup {
 
 // 分组标题映射：slug → 人类可读标题（默认英文）
 const GROUP_TITLES: Record<string, string> = {
-  bosses: "Bosses",
-  races: "Races",
-  maps: "Maps & Areas",
-  skills: "Skills",
-  codes: "Codes",
-  guide: "Getting Started",
-  "tier-list": "Tier Lists",
+  guide: "Guides",
+  "release-dates": "Release Dates",
+  news: "News",
+  anime: "Anime",
+  manga: "Manga",
+  roadmap: "Roadmap",
+  "card-game": "Card Game",
+  "mobile-game": "Mobile Game",
+  trailers: "Trailers",
 };
 
 // 日文分组标题映射
 const GROUP_TITLES_JA: Record<string, string> = {
-  bosses: "ボス",
-  races: "種族",
-  maps: "マップ & エリア",
-  skills: "スキル",
-  codes: "コード",
-  guide: "初心者ガイド",
-  "tier-list": "Tier List",
+  guide: "ガイド",
+  "release-dates": "発表情報",
+  news: "ニュース",
+  anime: "アニメ",
+  manga: "漫画",
+  roadmap: "ロードマップ",
+  "card-game": "カードゲーム",
+  "mobile-game": "モバイルゲーム",
+  trailers: "映像",
+};
+
+const GROUP_TITLES_ES: Record<string, string> = {
+  guide: "Guías",
+  "release-dates": "Fechas de lanzamiento",
+  news: "Noticias",
+  anime: "Anime",
+  manga: "Manga",
+  roadmap: "Hoja de ruta",
+  "card-game": "Juego de cartas",
+  "mobile-game": "Juego móvil",
+  trailers: "Tráilers",
+};
+
+const GROUP_TITLES_FR: Record<string, string> = {
+  guide: "Guides",
+  "release-dates": "Dates de sortie",
+  news: "Actualités",
+  anime: "Anime",
+  manga: "Manga",
+  roadmap: "Feuille de route",
+  "card-game": "Jeu de cartes",
+  "mobile-game": "Jeu mobile",
+  trailers: "Bandes-annonces",
 };
 
 // locale → 分组标题映射
 const GROUP_TITLES_BY_LOCALE: Record<string, Record<string, string>> = {
   ja: GROUP_TITLES_JA,
+  es: GROUP_TITLES_ES,
+  fr: GROUP_TITLES_FR,
 };
 
 // locale → "Overview" 翻译
 const OVERVIEW_LABEL_BY_LOCALE: Record<string, string> = {
   ja: "一覧",
+  es: "Resumen",
+  fr: "Aperçu",
 };
 
 // 分组排序顺序
 const GROUP_ORDER: string[] = [
-  "guide", "races", "bosses", "maps", "skills", "codes", "tier-list",
+  "guide", "release-dates", "news", "anime", "manga", "roadmap", "card-game", "mobile-game", "trailers",
 ];
 
 /**

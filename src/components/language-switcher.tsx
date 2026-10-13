@@ -13,7 +13,7 @@ import {
 
 const LOCALE_LABELS: Record<Locale, string> = {
   en: "English",
-  ja: "日本語",
+  ja: "日本語", es: "Español", fr: "Français",
 };
 
 /**
@@ -72,3 +72,4 @@ export function LanguageSwitcher({ locale }: { locale: string }) {
     </DropdownMenu>
   );
 }
+

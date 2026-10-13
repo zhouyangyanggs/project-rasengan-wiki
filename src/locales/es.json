@@ -1,0 +1,244 @@
+{
+  "site": {
+    "name": "Project Rasengan",
+    "shortName": "Project Rasengan",
+    "tagline": "Wiki de la comunidad",
+    "description": "Tu guía de Project Rasengan: anime NARUTO x NINKU, manga SHADOW RISING, NARUTO CARD GAME y NARUTO móvil global.",
+    "legalNotice": "Wiki de fans no oficial. Sin afiliación con Shueisha, Studio Pierrot o Bandai."
+  },
+  "nav": {
+    "guide": "Guía",
+    "release-dates": "Fechas",
+    "news": "Noticias",
+    "anime": "Anime",
+    "manga": "Manga",
+    "roadmap": "Hoja de ruta",
+    "card-game": "Juego de cartas",
+    "mobile-game": "Juego móvil",
+    "trailers": "Tráilers",
+    "home": "Inicio",
+    "menu": "Menú",
+    "toggleTheme": "Cambiar tema"
+  },
+  "home": {
+    "meta": {
+      "title": "Project Rasengan Wiki — Hoja de ruta, fechas y noticias",
+      "description": "Wiki independiente de Project Rasengan: anime NARUTO x NINKU, manga SHADOW RISING, NARUTO CARD GAME en junio de 2027 y NARUTO móvil global."
+    },
+    "hero": {
+      "eyebrow": "Wiki de la comunidad",
+      "title": "Project Rasengan",
+      "description": "El renacimiento de la franquicia NARUTO anunciado en la New York Comic Con 2026. Cuatro proyectos confirmados: el anime limitado NARUTO x NINKU, el nuevo manga SHADOW RISING de Masashi Kishimoto, el NARUTO CARD GAME mundial en junio de 2027 y NARUTO móvil global.",
+      "stats": [
+        "Announced at NYCC 2026",
+        "Card Game: Jun 2027",
+        "4 Confirmed Projects",
+        "NARUTO x NINKU",
+        "SHADOW RISING"
+      ],
+      "primaryCta": "Leer la guía inicial",
+      "secondaryCta": "Ver la hoja de ruta",
+      "tertiaryCta": "Juego de cartas 2027",
+      "videoLabel": "Tráiler oficial"
+    },
+    "updates": {
+      "title": "Últimas novedades",
+      "browse": "Ver todas las guías",
+      "viewAll": "Ver todo"
+    },
+    "start": {
+      "eyebrow": "Empieza aquí",
+      "title": "Tu recorrido por Project Rasengan",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guía inicial",
+          "description": "Qué es Project Rasengan, los cuatro proyectos confirmados y cómo seguir los anuncios oficiales."
+        },
+        {
+          "number": "2",
+          "title": "Cronología",
+          "description": "Fechas confirmadas y proyectos no anunciados, solo con hechos oficiales."
+        },
+        {
+          "number": "3",
+          "title": "Guía del anime NARUTO x NINKU",
+          "description": "El anime crossover limitado supervisado por Masashi Kishimoto y Koji Kiriyama, autor de NINKU."
+        },
+        {
+          "number": "4",
+          "title": "NARUTO CARD GAME",
+          "description": "Resumen de reglas, contexto de cartas y lanzamiento mundial en junio de 2027."
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "¿Qué es Project Rasengan?",
+      "paragraphs": [
+        "Project Rasengan es el renacimiento oficial de la franquicia NARUTO anunciado en la New York Comic Con 2026. Conecta cuatro proyectos confirmados en una hoja de ruta a largo plazo.",
+        "La iniciativa incluye un anime limitado de NARUTO x NINKU, el nuevo manga SHADOW RISING de Masashi Kishimoto, NARUTO CARD GAME en junio de 2027 y NARUTO mobile WORLDWIDE."
+      ],
+      "stats": [
+        {
+          "label": "Project Organizer",
+          "value": "NARUTO Franchise Partners"
+        },
+        {
+          "label": "Platforms",
+          "value": "Anime, Manga, Cards & Mobile"
+        },
+        {
+          "label": "Project Period",
+          "value": "2027-2029 Planned"
+        },
+        {
+          "label": "Anime",
+          "value": "Date TBA"
+        },
+        {
+          "label": "Card Game",
+          "value": "June 2027 Worldwide"
+        },
+        {
+          "label": "Mobile",
+          "value": "In Development"
+        }
+      ],
+      "cta": "Explorar guías"
+    },
+    "popular": {
+      "eyebrow": "Páginas populares",
+      "title": "Tendencias",
+      "quickLinks": [
+        "Roadmap",
+        "Release Dates",
+        "NARUTO x NINKU",
+        "Card Game"
+      ],
+      "cards": []
+    },
+    "faq": {
+      "title": "FAQ de Project Rasengan",
+      "description": "Respuestas claras basadas en información oficial del 13 de octubre de 2026.",
+      "items": [
+        {
+          "question": "¿Qué es Project Rasengan?",
+          "answer": "Es la iniciativa oficial de renacimiento de NARUTO anunciada en la NYCC 2026. Conecta anime, manga, cartas y un juego móvil global."
+        },
+        {
+          "question": "¿Cuándo sale el juego de cartas?",
+          "answer": "NARUTO CARD GAME está confirmado para junio de 2027 en todo el mundo."
+        },
+        {
+          "question": "¿Hay un Discord oficial?",
+          "answer": "No hay un Discord dedicado confirmado. Sigue el sitio oficial, X, YouTube e Instagram."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "¿Listo para explorar Project Rasengan?",
+      "description": "Desde el primer anuncio oficial hasta el juego de cartas de junio de 2027 y más allá, sigue la hoja de ruta con información clara y organizada.",
+      "primary": "Leer la guía inicial",
+      "secondary": "Sitio oficial"
+    }
+  },
+  "shared": {
+    "readMore": "Leer más",
+    "noGuidesAvailable": "Aún no hay páginas.",
+    "wikiNavigation": "Navegación",
+    "tableOfContents": "Índice",
+    "activeCodes": "Códigos activos",
+    "noCodes": "暂无",
+    "relatedGuides": "Guías relacionadas",
+    "overview": "Visión general",
+    "home": "Inicio",
+    "inThisSection": "En esta sección"
+  },
+  "footer": {
+    "aboutTitle": "Project Rasengan Wiki",
+    "about": "Project Rasengan Wiki es un sitio de fans independiente que organiza los proyectos del renacimiento de NARUTO y sus fuentes oficiales.",
+    "description": "Tu guía de Project Rasengan: anime NARUTO x NINKU, manga SHADOW RISING, NARUTO CARD GAME y NARUTO móvil global.",
+    "playGame": "Sitio oficial",
+    "officialYoutube": "YouTube oficial",
+    "officialX": "Official X",
+    "officialInstagram": "Official Instagram",
+    "communityTool": "NARUTO CARD GAME Official Site",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio",
+    "copyright": "© 2026 Project Rasengan Wiki. Proyecto de fans independiente."
+  },
+  "metadata": {
+    "title": "Project Rasengan Wiki — Hoja de ruta, fechas y noticias",
+    "description": "Wiki independiente de Project Rasengan: anime NARUTO x NINKU, manga SHADOW RISING, NARUTO CARD GAME en junio de 2027 y NARUTO móvil global.",
+    "keywords": "Project Rasengan, NARUTO x NINKU, Shadow Rising, Naruto Card Game 2027, Naruto mobile worldwide"
+  },
+  "contentTypes": {
+    "guide": {
+      "overviewTitle": "Guía — Project Rasengan Wiki",
+      "overviewDescription": "Official Project Rasengan facts: the NARUTO x NINKU anime, SHADOW RISING manga, NARUTO CARD GAME and NARUTO mobile worldwide."
+    },
+    "release-dates": {
+      "overviewTitle": "Fechas — Project Rasengan Wiki",
+      "overviewDescription": "Official release facts: card game in June 2027; manga details at Jump Festa 2027; anime and mobile dates TBA."
+    },
+    "news": {
+      "overviewTitle": "Noticias — Project Rasengan Wiki",
+      "overviewDescription": "Official announcements and verified updates from New York Comic Con 2026 and related NARUTO channels."
+    },
+    "anime": {
+      "overviewTitle": "Anime — Project Rasengan Wiki",
+      "overviewDescription": "The NARUTO x NINKU limited crossover anime is supervised by Masashi Kishimoto and NINKU author Koji Kiriyama."
+    },
+    "manga": {
+      "overviewTitle": "Manga — Project Rasengan Wiki",
+      "overviewDescription": "SHADOW RISING is a new NARUTO manga project drawn by Masashi Kishimoto; details come at Jump Festa 2027."
+    },
+    "roadmap": {
+      "overviewTitle": "Hoja de ruta — Project Rasengan Wiki",
+      "overviewDescription": "The Project Rasengan roadmap connects four announced projects through 2029."
+    },
+    "card-game": {
+      "overviewTitle": "Juego de cartas — Project Rasengan Wiki",
+      "overviewDescription": "NARUTO CARD GAME launches worldwide in June 2027 with a 51-card main deck, 5 Chakra cards and 1 Summon card."
+    },
+    "mobile-game": {
+      "overviewTitle": "Juego móvil — Project Rasengan Wiki",
+      "overviewDescription": "NARUTO mobile WORLDWIDE is in development; no release date or preregistration has been announced."
+    },
+    "trailers": {
+      "overviewTitle": "Tráilers — Project Rasengan Wiki",
+      "overviewDescription": "Official Project Rasengan media and locally hosted trailers for the announced projects."
+    }
+  },
+  "legal": {
+    "about": {
+      "title": "Sobre esta wiki",
+      "paragraphs": [
+        "Project Rasengan Wiki es un sitio de fans independiente."
+      ]
+    },
+    "copyright": {
+      "title": "Copyright y marcas",
+      "paragraphs": [
+        "NARUTO, Project Rasengan y los nombres, imágenes y vídeos relacionados pertenecen a sus titulares."
+      ]
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "paragraphs": [
+        "Esta wiki no solicita credenciales ni datos privados."
+      ]
+    },
+    "terms": {
+      "title": "Términos de servicio",
+      "paragraphs": [
+        "La información es de referencia y puede cambiar tras anuncios oficiales."
+      ]
+    }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas puede haberse movido o aún no se ha añadido.",
+    "backHome": "Volver al inicio"
+  }
+}
