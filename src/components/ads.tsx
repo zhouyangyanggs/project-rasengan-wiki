@@ -46,7 +46,7 @@ export function AdShell({ children }: { children: React.ReactNode }) {
         </aside>
 
         <div className="min-w-0">
-          <div className="flex justify-center px-4 pt-4">
+          <div className="sticky top-[64px] z-40 flex justify-center border-b border-border/60 bg-background/95 px-4 py-2 backdrop-blur">
             <AdsterraBanner variant="leaderboard" className="hidden lg:flex" />
             <AdsterraBanner variant="mobile" className="flex lg:hidden" />
           </div>
