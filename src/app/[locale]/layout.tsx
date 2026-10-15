@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { ThemeProvider } from "next-themes";
 import { JsonLd, SiteFooter, SiteHeader } from "@/components/site";
+import { AdShell } from "@/components/ads";
 import { routing } from "@/i18n/routing";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -51,7 +52,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
             <GoogleAnalytics gaId="G-C9C340VY98" />
             <JsonLd data={website} />
             <SiteHeader locale={locale} />
-            {children}
+            <AdShell>{children}</AdShell>
             <SiteFooter locale={locale} />
           </NextIntlClientProvider>
         </ThemeProvider>
@@ -59,3 +60,4 @@ export default async function LocaleLayout({ children, params }: { children: Rea
     </html>
   );
 }
+
