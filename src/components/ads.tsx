@@ -37,35 +37,54 @@ export function AdsterraBanner({ variant, className = "" }: { variant: AdVariant
 
 export function AdShell({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mx-auto w-full max-w-[1760px]">
-      <div className="grid grid-cols-1 gap-6 px-0 2xl:grid-cols-[160px_minmax(0,1fr)_160px]">
-        <aside className="hidden 2xl:block">
-          <div>
-            <AdsterraBanner variant="sidebarTall" />
+    <>
+      <div className="sticky top-[65px] z-40 border-b border-border/60 bg-background/95 backdrop-blur">
+        <div className="flex flex-col items-center px-4 py-2">
+          <span className="mb-1 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            Advertisement
+          </span>
+          <AdsterraBanner variant="mobile" />
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        {children}
+      </div>
+
+      <div className="mx-auto mt-10 max-w-7xl space-y-5 px-4 pb-8">
+        <div className="flex flex-col items-center">
+          <span className="mb-1 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            Advertisement
+          </span>
+          <AdsterraBanner variant="rectangle" />
+        </div>
+        <div className="flex flex-wrap items-start justify-center gap-5">
+          <div className="hidden flex-col items-center lg:flex">
+            <AdsterraBanner variant="leaderboard" />
           </div>
-        </aside>
-
-        <div className="min-w-0">
-          <div className="sticky top-[64px] z-40 flex justify-center border-b border-border/60 bg-background/95 px-4 py-2 backdrop-blur">
-            <AdsterraBanner variant="leaderboard" className="hidden lg:flex" />
-            <AdsterraBanner variant="mobile" className="flex lg:hidden" />
-          </div>
-
-          {children}
-
-          <div className="flex flex-col items-center gap-4 px-4 py-6">
-            <AdsterraBanner variant="rectangle" />
-            <AdsterraBanner variant="footer" className="hidden sm:flex" />
+          <div className="hidden flex-col items-center sm:flex">
+            <AdsterraBanner variant="footer" />
           </div>
         </div>
-
-        <aside className="hidden 2xl:block">
-          <div>
-            <AdsterraBanner variant="sidebarSmall" />
-          </div>
-        </aside>
       </div>
-    </div>
+
+      <div className="fixed left-2 top-1/2 z-40 hidden min-[1700px]:block -translate-y-1/2">
+        <div className="flex flex-col items-center">
+          <span className="mb-1 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            Advertisement
+          </span>
+          <AdsterraBanner variant="sidebarTall" />
+        </div>
+      </div>
+
+      <div className="fixed right-2 top-1/2 z-40 hidden min-[1700px]:block -translate-y-1/2">
+        <div className="flex flex-col items-center">
+          <span className="mb-1 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            Advertisement
+          </span>
+          <AdsterraBanner variant="sidebarSmall" />
+        </div>
+      </div>
+    </>
   );
 }
-
