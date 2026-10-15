@@ -40,7 +40,7 @@ export function AdShell({ children }: { children: React.ReactNode }) {
     <div className="mx-auto w-full max-w-[1760px]">
       <div className="grid grid-cols-1 gap-6 px-0 2xl:grid-cols-[160px_minmax(0,1fr)_160px]">
         <aside className="hidden 2xl:block">
-          <div className="sticky top-24">
+          <div>
             <AdsterraBanner variant="sidebarTall" />
           </div>
         </aside>
@@ -60,7 +60,7 @@ export function AdShell({ children }: { children: React.ReactNode }) {
         </div>
 
         <aside className="hidden 2xl:block">
-          <div className="sticky top-24">
+          <div>
             <AdsterraBanner variant="sidebarSmall" />
           </div>
         </aside>
